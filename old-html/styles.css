@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #87CEEB;
+    margin:20px, 10px;
+
+}
+
+nav ul {
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul li {
+    list-style: none;
+    width: 30%;
+    background-color: #00afef;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+header h1 {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+main img {
+    object-fit: cover;
+    margin-right: 20px;
+    height: 350px;
+    width: auto;
+}
+
+
+main li:before {
+    content: '🍡';
+    margin-left: -31px;
+    padding-right: 8px;
+}
+
+main li{
+    list-style: none;
+    vertical-align: middle;
+    line-height: 2;
+
+}
+
+main, section, footer {
+    background-color:white ;
+    border-radius: 5px;
+    padding: 20px;
+}
+.store-button { /* used for store link in "Get refreshed" section */
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 40%;
+}
+
+
+.home{
+    display: grid;
+    grid-template-areas:
+    "header  nav "
+    "main    main "
+    "race    store"
+    "copy    copy";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+nav{
+    grid-area: nav;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+}
+
+main {
+    display: flex;
+    grid-area: main;
+    align-items:center;
+    flex-direction: row;
+}
+
+
+
+.race{
+    grid-area: race;
+    display: grid;
+    grid-template-areas: 
+    "pic label"
+    "pic text";
+    justify-items: center;
+}
+
+.race > #racepic{
+    grid-area: pic;
+    height: 100;
+}
+
+.race > p{
+    grid-area: text;
+}
+
+.race h2{
+    grid-area: label;
+}
+
+.store{
+    grid-area: store;
+    display:grid;
+    line-height: 1.5;
+}
+
+.store h2{
+    text-align: center;
+}
+
+
+.copy{
+    grid-area: copy;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: white;
+}
+
+/* Contact Us CSS */
+
+#contactgrid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: "header nav"
+                         "main main"
+                         "footer footer";
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+    }
+
+#main {
+display: block;
+grid-area: main;
+
+}
+
+#main div:last-child{
+    margin-top: 20px;
+}
+
+#main label{
+    display: block;
+    padding-bottom: 5px;
+}
+
+
+form{
+    grid-area: form;
+
+}
+
+footer{
+    grid-area: footer;
+
+}
+
+#main h2{
+    vertical-align: top;
+}
+
+
+
+#main input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00afef;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+}
+
+#main input[type="submit"]:hover{
+    cursor: pointer;
+}
+#main input {
+    width: 300px;
+    height: 25px;
+
+}
+
+#main select{
+    width: 300px;
+    height: 35px;
+}
+
+@media (max-width:800px) {
+    .home{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "race"
+        "store"
+        "copy";
+    
+    }   
+    .race{
+        grid-template-areas: 
+        "pic label"
+        "text text";
+    }
+
+    #contactgrid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+
+
+    main{
+        margin-top: -10px;
+        display: block;
+    }
+
+
+    main img{
+    width: 100%;
+    }
+
+    header h1{
+        width: 60%;
+        padding-top: 0;
+    
+    }
+
+    
+    nav ul li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 25px;
+    
+    
+    }
+
+    #main input, textarea{
+        width: 100%;
+    } 
+
+    #main select {
+        width: 102%;
+    }
+
+
+
+    
+}

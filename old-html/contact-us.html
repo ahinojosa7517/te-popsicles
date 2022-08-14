@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="contactgrid">
+    <header>
+        <img src="images\te-pops.png" alt="Tech Elevator Logo">
+        <h1>Tech Elevator Popsicles</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">STORE</a></li>
+            <li><a href="contact-us.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <h2>Contact Us</h2>
+        <form action = "example.com" method = "post" id="form">
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" />
+            </div>
+            <div>
+                <label for="referral">How did you hear of us:</label>
+                <select id="referral" name="referral">
+                    <option value="Popsicle Monthly">Popsicle Monthly</option>
+                    <option value="Popsicle Weekly">Popsicle Weekly</option>
+                    <option value="Popsicle Quarterly">Popsicle Quarterly</option>
+                </select>
+            </div>
+            <div>
+                <label for="color">What is your favorite popsicle:</label>
+                <input type="color" id="color" name="color" value="#00AFEF">
+            </div>
+            <!-- Fix box sizing -->
+            <div>
+                <label for="comments">Please let us know any comments your have:</label>
+                <textarea id="comments" name="comments" rows="10" cols="60">
+            </textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit" type="button">
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>&copy; Tech Elevator 2022</p>
+    </footer>
+</body>
+</html>
