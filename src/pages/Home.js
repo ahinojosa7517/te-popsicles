@@ -18,7 +18,7 @@ class Home extends React.Component {
                 <Helmet>
                     <title>{TITLE}</title>
                 </Helmet>
-                <main>
+                <main className="main">
                     <img src={popsicleRainbow} alt="popsicle rainbow" />
                     <section id="list">
                         <h2>Did You Know?</h2>

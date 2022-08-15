@@ -10,16 +10,16 @@ import "./App.css";
 
 function App() {
     return (
-        <div>
+        <>
             <Header />
-            <Router>
+            {/* <Router>
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/contact-us" component={ContactUs} />
                 </Switch>
             </Router>
-            <Footer />
-        </div>
+            <Footer /> */}
+        </>
     );
 }
 

@@ -8,7 +8,7 @@ const TITLE = "Contact Us | " + Config.SITE_TITLE;
 class ContactUs extends React.Component {
     render() {
         return (
-            <main id="main">
+            <main className="contact-us">
                 {/* 
                 Helmet allows us to update page title - TITLE variable pulls from Config.json to avoid hardcoding.
                  */}
